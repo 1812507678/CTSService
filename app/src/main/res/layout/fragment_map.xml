@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/trace_bmapView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true" />
+    <LinearLayout
+        android:id="@+id/ll_map_top"
+       android:layout_marginTop="-65dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#40A8F4"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_personalinformation"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/care_person"
+                android:layout_gravity="center"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="个人信息"
+                android:layout_margin="4dp"
+                android:layout_gravity="center"
+                android:textSize="10sp"
+                android:textColor="#ffffff"
+                />
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_emergencytrace"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/care_chat"
+            android:layout_gravity="center"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="微聊"
+            android:layout_gravity="center"
+            android:textSize="10sp"
+            android:layout_margin="4dp"
+            android:textColor="#ffffff"
+            />
+
+
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_call"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/care_call"
+                android:layout_gravity="center"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="呼叫"
+
+                android:layout_margin="4dp"
+                android:textSize="10sp"
+                android:layout_gravity="center"
+                android:textColor="#ffffff"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_carealarm"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/care_bell"
+                android:layout_gravity="center"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:text="关爱闹钟"
+                android:layout_gravity="center"
+                android:textSize="10sp"
+                android:textColor="#ffffff"
+                />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+   <!-- <Button
+        android:id="@+id/bt_trace_starttrace"
+        android:layout_toRightOf="@id/bt_trace_looktrace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="开始追踪"/>
+    <Button
+        android:id="@+id/bt_trace_stoptrace"
+        android:layout_toRightOf="@id/bt_trace_starttrace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="停止追踪"/>
+    <Button
+        android:id="@+id/bt_trace_processedtrace"
+        android:layout_below="@id/bt_trace_nowLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="纠偏"/>
+
+-->
+
+    <LinearLayout
+        android:id="@+id/ll_map_trace"
+        android:layout_width="39dp"
+        android:layout_height="39dp"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical"
+        android:layout_marginTop="68dp"
+        android:layout_marginRight="10dp"
+
+        android:gravity="center"
+        android:padding="3dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/location_a"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_map_fence"
+        android:layout_below="@id/ll_map_trace"
+        android:layout_width="39dp"
+        android:layout_height="39dp"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:padding="3dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/location_b"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_map_state"
+        android:layout_below="@id/ll_map_fence"
+        android:layout_width="39dp"
+        android:layout_height="39dp"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:padding="3dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/location_c"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_map_more"
+        android:layout_below="@id/ll_map_state"
+        android:layout_width="39dp"
+        android:layout_height="39dp"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:padding="3dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/location_d"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_map_nowloation"
+        android:layout_width="39dp"
+        android:layout_height="39dp"
+        android:src="@drawable/bg_nowlocation"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="70dp"/>
+</RelativeLayout>

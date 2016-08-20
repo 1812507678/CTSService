@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ctyon.com.ctsservice.activity.TraceActivity">
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/trace_bmapView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true" />
+    <Button
+        android:id="@+id/bt_trace_nowLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="当前位置"/>
+    <Button
+        android:id="@+id/bt_trace_looktrace"
+        android:layout_toRightOf="@id/bt_trace_nowLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="查看轨迹"/>
+    <Button
+        android:id="@+id/bt_trace_starttrace"
+        android:layout_toRightOf="@id/bt_trace_looktrace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="开始追踪"/>
+    <Button
+        android:id="@+id/bt_trace_stoptrace"
+        android:layout_toRightOf="@id/bt_trace_starttrace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="停止追踪"/>
+    <Button
+        android:id="@+id/bt_trace_processedtrace"
+        android:layout_below="@id/bt_trace_nowLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="纠偏"/>
+
+    <Button
+        android:id="@+id/bt_trace_showfence"
+        android:layout_below="@id/bt_trace_looktrace"
+        android:layout_toRightOf="@id/bt_trace_processedtrace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="显示围栏"/>
+    <Button
+        android:id="@+id/bt_trace_newfence"
+        android:layout_below="@id/bt_trace_starttrace"
+        android:layout_toRightOf="@id/bt_trace_showfence"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="新建围栏"/>
+
+    <Button
+        android:id="@+id/bt_trace_checkstate"
+        android:layout_below="@id/bt_trace_stoptrace"
+        android:layout_toRightOf="@id/bt_trace_newfence"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="查询状态"/>
+    <Button
+        android:id="@+id/bt_trace_histeryAlarmInfo"
+        android:layout_below="@id/bt_trace_processedtrace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="历史报警信息"/>
+
+</RelativeLayout>

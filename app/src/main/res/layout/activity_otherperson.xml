@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dip" >
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="头像"
+                android:textColor="@color/title_text_color"
+                android:textSize="16.0sp" />
+
+            <ctyon.com.ctsservice.view.CircleImageView
+                android:id="@+id/head_icon_iv"
+                android:layout_width="92.0dip"
+                android:layout_height="92.0dip"
+                android:layout_alignParentRight="true"
+                android:onClick="onClick"
+                android:src="@drawable/head" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10.0dip"
+            android:background="@drawable/layout_width"
+            android:orientation="vertical" >
+            <RelativeLayout
+                android:id="@+id/rl_use_id"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:padding="10.0dip" >
+
+                <TextView
+                    android:id="@+id/userid_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="@string/main_login_id_prompt"
+                    android:textColor="@color/title_text_color"
+                    android:textSize="16.0sp" />
+
+                <TextView
+                    android:id="@+id/userid_detail_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_marginRight="10.0dip"
+                    android:layout_toRightOf="@+id/userid_tv"
+                    android:gravity="right|center"
+                    android:text="888888"
+                    android:textAppearance="@style/TextAppearanceVersonCode" />
+            </RelativeLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:scaleType="fitXY"
+                android:src="@drawable/home_icon_line2" />
+            <RelativeLayout
+                android:id="@+id/rl_use"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+
+                android:padding="10.0dip" >
+
+                <TextView
+                    android:id="@+id/nick_name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:gravity="center"
+                    android:text="姓名"
+                    android:textColor="@color/title_text_color"
+                    android:textSize="16.0sp" />
+
+                <TextView
+                    android:id="@+id/nick_name_detail_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_marginRight="10.0dip"
+
+                    android:clickable="false"
+                    android:drawablePadding="10.0dip"
+
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:gravity="right|center"
+                    android:text="嘿嘿"
+                    android:textAppearance="@style/TextAppearanceVersonCode" />
+            </RelativeLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:scaleType="fitXY"
+                android:src="@drawable/home_icon_line2" />
+            <RelativeLayout
+                android:id="@+id/rl_guardian"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+
+                android:padding="10.0dip" >
+
+                <TextView
+                    android:id="@+id/tv_guardian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:gravity="center"
+                    android:text="监护设置"
+                    android:textColor="@color/title_text_color"
+                    android:textSize="16.0sp" />
+
+                <ImageView
+                    android:id="@+id/tv_"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_marginRight="10.0dip"
+                    android:src="@drawable/r_arrow"
+
+                    android:clickable="false"
+                    android:drawablePadding="10.0dip"
+
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:gravity="right|center"
+                    android:text="100"
+                    android:textAppearance="@style/TextAppearanceVersonCode" />
+            </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+</LinearLayout>

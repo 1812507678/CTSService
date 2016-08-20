@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="使用说明"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_15"
+        android:layout_margin="@dimen/text_size_20"
+        android:textColor="@color/app"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/app" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="（1）【功能提示】设置了该页面的参数，定位宝会智能的判断亲友是否超出区域附近，是否需要停止上报位置信息。"
+        android:padding="10dp"
+        android:textColor="@color/calendar_header"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="（2）【操作提示】进入地址选择后，设定监护区域，点击确定按钮即可保存修改。"
+        android:padding="10dp"
+        android:textColor="@color/calendar_header"
+        />
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/app" />
+    <Button
+        android:id="@+id/information_back"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="@dimen/space_20"
+
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn_login_s"
+        android:layout_marginTop="15.0dip"
+
+        android:text="返回"
+        android:textAppearance="@style/TextAppearanceTitleLager"
+        android:textColor="@drawable/share_color_white_white_s" />
+
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:background="#40A8F4"
+        >
+
+        <RelativeLayout
+            android:id="@+id/rl_othername"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <ctyon.com.ctsservice.view.CircleImageView
+                android:id="@+id/head_item"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/icon_inf_photo_girl"
+                android:gravity="center_vertical"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                />
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_toRightOf="@+id/head_item"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="姓名"
+                android:textSize="17sp"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"
+                />
+        </RelativeLayout>
+        <ImageView
+            android:id="@+id/iv_delete"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_card_delete"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:background="#40A8F4"
+        android:text="当TA接受了您的邀请，您才能够看到其位置"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        />
+    <TextView
+        android:id="@+id/tv_ta"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#02ACFF"
+        android:text="提醒TA"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:textSize="20sp"
+        />
+
+</LinearLayout>

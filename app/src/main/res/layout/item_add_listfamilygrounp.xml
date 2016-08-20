@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:background="@drawable/bg_list"
+        android:orientation="horizontal" >
+        <ctyon.com.ctsservice.view.CircleImageView
+            android:id="@+id/iv_personcenter_iocn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/widget_dface" />
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/rl_add_nameandphone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#fff">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    style="@style/MenuItemTextViewStyle"
+                    android:id="@+id/name"
+
+                    android:textColor="#333"
+                    android:paddingTop="10dp"
+                    android:paddingLeft="10dp"
+                    android:text="名称"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/MenuItemTextViewStyle"
+                    android:textSize="14sp"
+                    android:id="@+id/phone"
+                    android:padding="10dp"
+                    android:textColor="@color/assict_text_color"
+                    android:text="号码"
+                    />
+            </LinearLayout>
+
+
+                <Button
+                    android:layout_centerVertical="true"
+                    android:id="@+id/bt_add_talk"
+                    android:layout_width="45dp"
+                    android:layout_height="20dp"
+                    android:layout_margin="@dimen/space_20"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/btn_login_s"
+                    android:layout_marginTop="15.0dip"
+                    android:text="微聊"
+                    android:textSize="15dp"
+                    android:textAppearance="@style/TextAppearanceTitleLager"
+                    android:textColor="@drawable/share_color_white_white_s" />
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

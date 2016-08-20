@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ListView
+        android:id="@+id/lv_alreadyimpower"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        >
+
+
+    </ListView>
+
+
+    <Button
+        android:id="@+id/bt_alreadyimpower"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="@dimen/space_30"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn_login_s"
+        android:text="+授权新的联系人"
+        android:onClick="impower"
+
+        android:textColor="@drawable/share_color_white_white_s" />
+</LinearLayout>

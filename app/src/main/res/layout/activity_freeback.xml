@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="220dp"
+    android:hint="您的意见是我们进步的动力"
+    android:paddingTop="@dimen/space_10"
+    android:paddingLeft="@dimen/space_10"
+    android:layout_margin="@dimen/space_10"
+
+   android:gravity="top"
+
+    android:background="@drawable/bg_freeback"
+    />
+    <Button
+        android:id="@+id/main_login_login"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="@dimen/space_20"
+
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn_login_s"
+        android:layout_marginTop="15.0dip"
+
+        android:text="提交"
+        android:textAppearance="@style/TextAppearanceTitleLager"
+        android:textColor="@drawable/share_color_white_white_s" />
+</LinearLayout>

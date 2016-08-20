@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:paddingTop="100dp"
+    android:layout_height="match_parent">
+    <TextView
+        style="@style/MenuItemTextViewStyle"
+        android:text="动动你的手指，把应用分享给你的家人吧"
+        android:textSize="13sp"
+        android:layout_gravity="center"
+        android:textColor="@color/app"
+        />
+    <Button
+        android:id="@+id/activity_recomment"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="@dimen/space_10"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn_login_s"
+        android:text="点击分享给你的家人吧"
+        android:onClick="recommend"
+        android:textAppearance="@style/TextAppearanceTitleLager"
+        android:textColor="@drawable/share_color_white_white_s" />
+
+</LinearLayout>

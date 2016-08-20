@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/date_picker_view_animator">
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/text_size_20"
+            />
+        <TextView
+            android:id="@+id/tv_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_25"
+            android:text="定位宝"
+            android:layout_marginTop="@dimen/space_5"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:layout_below="@id/iv_logo"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_15"
+            android:text="1.0.00"
+            android:layout_marginTop="@dimen/space_5"
+            android:textColor="@color/common_action_bar_splitter"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/tv_logo"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        >
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="@dimen/space_5"
+
+       android:layout_marginRight="@dimen/space_5"
+        android:gravity="left|center"
+        android:paddingLeft="@dimen/space_5"
+        android:background="@drawable/btn_login_s"
+        android:layout_marginTop="15.0dip"
+        android:text="版本检测"
+        android:textAppearance="@style/TextAppearanceTitleLager"
+        android:textColor="@drawable/share_color_white_white_s" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/list_divider_color" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="@dimen/space_5"
+
+        android:layout_marginRight="@dimen/space_5"
+        android:gravity="left|center"
+        android:paddingLeft="@dimen/space_5"
+        android:background="@drawable/btn_login_s"
+        android:layout_marginTop="15.0dip"
+        android:text="工能介绍"
+        android:textAppearance="@style/TextAppearanceTitleLager"
+        android:textColor="@drawable/share_color_white_white_s" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/list_divider_color" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="@dimen/space_5"
+
+            android:layout_marginRight="@dimen/space_5"
+            android:gravity="left|center"
+            android:paddingLeft="@dimen/space_5"
+            android:background="@drawable/btn_login_s"
+            android:layout_marginTop="15.0dip"
+            android:text="升级说明"
+            android:textAppearance="@style/TextAppearanceTitleLager"
+            android:textColor="@drawable/share_color_white_white_s" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/list_divider_color" />
+</LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_bg_color"
+    android:orientation="vertical" >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ctyon.com.ctsservice.view.CircleImageView
+                android:id="@+id/head_icon_iv"
+                android:layout_width="120.0dip"
+                android:layout_height="120.0dip"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10.0dip"
+                android:src="@drawable/widget_bar_me_nor"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10.0dip"
+                android:background="@drawable/layout_width"
+                android:orientation="vertical" >
+                <RelativeLayout
+                    android:id="@+id/rl_use_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:padding="10.0dip" >
+
+                    <TextView
+                        android:id="@+id/userid_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:text="@string/main_login_id_prompt"
+                        android:textColor="@color/title_text_color"
+                        android:textSize="16.0sp" />
+
+                    <TextView
+                        android:id="@+id/userid_detail_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20.0dip"
+                        android:layout_marginRight="10.0dip"
+                        android:layout_toRightOf="@+id/userid_tv"
+                        android:gravity="right|center"
+                        android:text="888888"
+                        android:textAppearance="@style/TextAppearanceVersonCode" />
+                </RelativeLayout>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginRight="10.0dip"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/home_icon_line2" />
+                <RelativeLayout
+                    android:id="@+id/rl_use"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+
+                    android:padding="10.0dip" >
+
+                    <TextView
+                        android:id="@+id/nick_name_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:gravity="center"
+                        android:text="姓名"
+                        android:textColor="@color/title_text_color"
+                        android:textSize="16.0sp" />
+
+                    <TextView
+                        android:id="@+id/nick_name_detail_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20.0dip"
+                        android:layout_marginRight="10.0dip"
+
+                        android:clickable="false"
+                        android:drawablePadding="10.0dip"
+
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:gravity="right|center"
+                        android:text="请输入姓名"
+                        android:textAppearance="@style/TextAppearanceVersonCode" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10.0dip"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:background="@drawable/layout_width"
+                android:orientation="vertical" >
+                <RelativeLayout
+                    android:id="@+id/rl_sex"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+
+                    android:padding="10.0dip" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:text="@string/sex"
+                        android:textColor="@color/title_text_color"
+                        android:textSize="16.0sp" />
+
+                    <TextView
+                        android:id="@+id/sex_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10.0dip"
+                        android:drawablePadding="10.0dip"
+                        android:gravity="center"
+                        android:text="@string/man"
+                        android:textAppearance="@style/TextAppearanceVersonCode" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginRight="10.0dip"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/home_icon_line2" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_sign"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+
+                    android:padding="10.0dip" >
+
+                    <TextView
+                        android:id="@+id/sign_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:text="@string/sign"
+                        android:textColor="@color/title_text_color"
+                        android:textSize="16.0sp" />
+
+                    <TextView
+                        android:id="@+id/sign_show_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20.0dip"
+                        android:layout_marginRight="10.0dip"
+                        android:layout_toRightOf="@+id/sign_tv"
+                        android:drawablePadding="10.0dip"
+                        android:gravity="right|center"
+                        android:singleLine="true"
+                        android:text="请输入签名"
+                        android:textAppearance="@style/TextAppearanceVersonCode" />
+
+                </RelativeLayout>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginRight="10.0dip"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/home_icon_line2" />
+                <RelativeLayout
+                    android:id="@+id/rl_sign_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+
+                    android:padding="10.0dip" >
+
+                    <TextView
+                        android:id="@+id/phone_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:text="家庭地址"
+                        android:textColor="@color/title_text_color"
+                        android:textSize="16.0sp" />
+
+                    </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/bt_sure_put"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="@dimen/space_20"
+
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/btn_login_s"
+                android:layout_marginTop="15.0dip"
+
+                android:text="确定"
+                android:textAppearance="@style/TextAppearanceTitleLager"
+                android:textColor="@drawable/share_color_white_white_s" />
+        </LinearLayout>
+
+
+</LinearLayout>

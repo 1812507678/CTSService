@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="授权"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:layout_margin="@dimen/text_size_20"
+        android:textColor="@color/app"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/app" />
+    <TextView
+        android:id="@+id/tv_add_family"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:layout_margin="@dimen/text_size_20"
+
+
+        android:text="你确定添加某某某吗"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/list_divider_color" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="20.0dip"
+        android:gravity="center_horizontal" >
+
+        <Button
+            android:id="@+id/next_btn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dip"
+            android:layout_marginLeft="@dimen/space_5"
+            android:background="@drawable/btn_login_s"
+            android:onClick="onClick"
+            android:text="@string/confirm"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/cancel_btn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/space_5"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/btn_login_s"
+            android:text="@string/cancel"
+            android:onClick="onClick"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/list_divider_color" />
+
+</LinearLayout>

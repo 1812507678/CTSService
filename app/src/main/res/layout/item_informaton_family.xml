@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="使用说明"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_15"
+        android:layout_margin="@dimen/text_size_20"
+        android:textColor="@color/app"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/app" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="（1）授权后的亲友，对方可以在“我能看的亲友页面”点击“锁定”，查看自己当前位置，活动轨迹，设置活动区域。"
+        android:padding="10dp"
+        android:textColor="@color/calendar_header"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="（2）在“我授权的亲友页面”，点击“微聊”，可以与当前亲友聊天。"
+        android:padding="10dp"
+        android:textColor="@color/calendar_header"
+        />
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/list_divider_color" />
+    <Button
+        android:id="@+id/information_back"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="@dimen/space_20"
+
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn_login_s"
+        android:layout_marginTop="15.0dip"
+
+        android:text="返回"
+        android:textAppearance="@style/TextAppearanceTitleLager"
+        android:textColor="@drawable/share_color_white_white_s" />
+
+</LinearLayout>

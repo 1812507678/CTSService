@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swip_refresh_widget"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<LinearLayout
+ android:layout_width="match_parent"
+ android:layout_height="wrap_content"
+    android:background="@color/list_item_background_normal"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:id="@+id/ll_user_container"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/user_center_bg"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <RelativeLayout
+            android:id="@+id/rl_user_center"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:clickable="true" >
+
+            <ctyon.com.ctsservice.view.CircleImageView
+                android:id="@+id/iv_avatar"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/space_20"
+                android:contentDescription="@null"
+                android:src="@drawable/widget_dface"
+               />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_avatar"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/space_5"
+                style="@style/user_formation_info"
+                android:text="@string/clicklogin"/>
+
+
+        </RelativeLayout>
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="3px"
+            android:background="#18be40" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/ll_my_score"
+                style="@style/uset_information_ll"
+                android:clickable="false"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_score"
+                    style="@style/user_formation_text" />
+
+                <TextView
+                    style="@style/user_formation_info"
+                    android:text="@string/user_score" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_my_add"
+                style="@style/uset_information_ll"
+                >
+
+                <TextView
+                    android:id="@+id/tv_following_count"
+                    style="@style/user_formation_text" />
+
+                <TextView
+                    style="@style/user_formation_info"
+                    android:text="@string/add" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_my_bind"
+                style="@style/uset_information_ll" >
+
+                <TextView
+                    android:id="@+id/tv_follower_count"
+                    style="@style/user_formation_text" />
+
+                <TextView
+                    style="@style/user_formation_info"
+                    android:text="解绑" />
+            </LinearLayout>
+        </LinearLayout>
+      </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_my_personal"
+        style="@style/option_item_rl"
+        android:layout_marginTop="@dimen/space_10">
+
+        <ImageView
+            style="@style/option_item_img"
+            android:contentDescription="@null"
+            android:background="@drawable/icon_my_blog"/>
+
+        <TextView
+            style="@style/option_item_text"
+            android:text="@string/personnal" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/list_divider_color" />
+    <LinearLayout
+        android:id="@+id/ll_my_notes"
+        style="@style/option_item_rl"
+        >
+
+        <ImageView
+            style="@style/option_item_img"
+            android:contentDescription="@null"
+            android:layout_marginRight="@dimen/space_10"
+            android:background="@drawable/icon_my_note"/>
+
+        <TextView
+            style="@style/option_item_text"
+            android:text="@string/notes" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/list_divider_color" />
+    <LinearLayout
+        android:id="@+id/ll_my_message"
+        style="@style/option_item_rl"
+         >
+
+        <ImageView
+            style="@style/option_item_img"
+            android:contentDescription="@null"
+            android:layout_marginRight="@dimen/space_10"
+            android:background="@drawable/icon_my_message"/>
+
+        <TextView
+            style="@style/option_item_text"
+            android:text="@string/message" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/list_divider_color" />
+
+    <LinearLayout
+        android:id="@+id/ll_my_family"
+        style="@style/option_item_rl" >
+
+        <ImageView
+            style="@style/option_item_img"
+            android:contentDescription="@null"
+            android:background="@drawable/icon_my_team"/>
+
+        <TextView
+            style="@style/option_item_text"
+            android:text="@string/family" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="@dimen/space_20"
+        android:orientation="horizontal"
+        android:padding="@dimen/space_4" >
+
+        <TextView
+            android:id="@+id/tv_private_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_small_white_selector"
+            android:clickable="true"
+            android:drawableLeft="@drawable/ic_private_message"
+            android:drawablePadding="@dimen/space_4"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/space_20"
+            android:paddingRight="@dimen/space_20"
+            android:text="意见反馈"
+            android:textColor="@color/main_black"
+            android:textSize="@dimen/text_size_12" />
+
+        <TextView
+            android:id="@+id/tv_follow_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_20"
+            android:background="@drawable/btn_small_white_selector"
+            android:clickable="true"
+            android:drawableLeft="@drawable/ic_followed"
+            android:drawablePadding="@dimen/space_4"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/space_20"
+            android:paddingRight="@dimen/space_20"
+            android:text="关注我们"
+            android:textColor="@color/main_black"
+            android:textSize="@dimen/text_size_12" />
+    </LinearLayout>
+
+    </LinearLayout>
+</android.support.v4.widget.SwipeRefreshLayout>

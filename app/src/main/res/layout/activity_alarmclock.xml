@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/ll_alarm_medicine"
+            style="@style/MenuItemLayoutStyle"
+            android:layout_marginTop="@dimen/space_20"
+            >
+
+            <ImageView
+                style="@style/MenuItemImageViewStyle"
+                android:background="@drawable/alarmclock_medicine_selector"
+                android:contentDescription="@null" />
+
+            <TextView
+                style="@style/MenuItemTextViewStyle"
+                android:text="设置闹钟，记得按时吃药喝水呦" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_alarm_walk"
+            style="@style/MenuItemLayoutStyle"
+            android:layout_marginTop="@dimen/space_20"
+            >
+
+            <ImageView
+                style="@style/MenuItemImageViewStyle"
+                android:background="@drawable/alarmclock_walk_selector"
+                android:contentDescription="@null" />
+
+            <TextView
+                style="@style/MenuItemTextViewStyle"
+                android:text="设置闹钟，记得散步加强锻炼呦" />
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

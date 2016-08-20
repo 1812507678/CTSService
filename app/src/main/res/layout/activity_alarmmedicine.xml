@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/text_size_20"
+        >
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/list_divider_color" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/space_5"
+            android:gravity="left|center"
+            android:clickable="true"
+            android:onClick="lablealarm"
+            android:paddingLeft="@dimen/space_5"
+            android:background="@drawable/btn_login_s">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="标签："
+                android:textSize="20sp"
+                android:textColor="@drawable/share_color_white_white_s" />
+            <TextView
+                android:id="@+id/tv_alarmmedicine_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="关爱闹钟"
+                android:textSize="20sp"
+                android:textColor="@drawable/share_color_white_white_s"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/list_divider_color" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/space_5"
+            android:gravity="left|center"
+            android:onClick="timealarm"
+            android:clickable="true"
+            android:paddingLeft="@dimen/space_5"
+            android:background="@drawable/btn_login_s">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="时间："
+                android:textSize="20sp"
+                android:textColor="@drawable/share_color_white_white_s" />
+            <TextView
+                android:id="@+id/tv_alarmmedicine_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10：15"
+                android:textSize="20sp"
+                android:textColor="@drawable/share_color_white_white_s"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/list_divider_color" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/space_5"
+            android:gravity="left|center"
+            android:clickable="true"
+            android:onClick="repeatalarm"
+            android:paddingLeft="@dimen/space_5"
+            android:background="@drawable/btn_login_s">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="重复："
+                android:textSize="20sp"
+                android:textColor="@drawable/share_color_white_white_s" />
+            <TextView
+                android:id="@+id/tv_alarmmedicine_repeat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="每天"
+                android:textSize="20sp"
+                android:textColor="@drawable/share_color_white_white_s"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/list_divider_color" />
+
+        <LinearLayout
+            android:id="@+id/ll_alarmmedicine_bell"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/space_5"
+            android:gravity="left|center"
+            android:clickable="true"
+            android:onClick="bellalarm"
+            android:paddingLeft="@dimen/space_5"
+            android:background="@drawable/btn_login_s">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="铃声："
+                android:textSize="20sp"
+                android:textColor="@drawable/share_color_white_white_s" />
+            <TextView
+                android:id="@+id/tv_alarmmedicine_alarm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="awakding"
+                android:textSize="20sp"
+                android:textColor="@drawable/share_color_white_white_s"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/list_divider_color" />
+    </LinearLayout>
+
+</LinearLayout>

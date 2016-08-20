@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="铃声"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_25"
+        android:layout_margin="@dimen/text_size_20"
+        android:textColor="@color/green"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5px"
+        android:background="@color/green" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll_Argon"
+        android:orientation="vertical">
+        <TextView
+            style="@style/MenuItemTextViewStyle"
+            android:layout_margin="@dimen/text_size_10"
+            android:layout_gravity="center"
+            android:text="Argon" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#d2d2d2" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll_Carbon"
+        android:orientation="vertical">
+        <TextView
+            style="@style/MenuItemTextViewStyle"
+            android:layout_margin="@dimen/text_size_10"
+            android:layout_gravity="center"
+            android:text="Carbon" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#d2d2d2" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll_Helium"
+        android:orientation="vertical">
+        <TextView
+            style="@style/MenuItemTextViewStyle"
+            android:layout_margin="@dimen/text_size_10"
+            android:layout_gravity="center"
+            android:text="Helium" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#d2d2d2" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll_Krypton"
+        android:orientation="vertical">
+        <TextView
+            style="@style/MenuItemTextViewStyle"
+            android:layout_margin="@dimen/text_size_10"
+            android:layout_gravity="center"
+            android:text="Krypton" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#d2d2d2" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll_Neon"
+        android:orientation="vertical">
+        <TextView
+            style="@style/MenuItemTextViewStyle"
+            android:layout_margin="@dimen/text_size_10"
+            android:layout_gravity="center"
+            android:text="Neon" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#d2d2d2" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll_Osmium"
+        android:orientation="vertical">
+        <TextView
+            style="@style/MenuItemTextViewStyle"
+            android:layout_margin="@dimen/text_size_10"
+            android:layout_gravity="center"
+            android:text="Osmium" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#d2d2d2" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll_Oxygen"
+        android:orientation="vertical">
+        <TextView
+            style="@style/MenuItemTextViewStyle"
+            android:layout_margin="@dimen/text_size_10"
+            android:layout_gravity="center"
+            android:text="Oxygen" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#d2d2d2" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll_Platinum"
+        android:orientation="vertical">
+        <TextView
+            style="@style/MenuItemTextViewStyle"
+            android:layout_margin="@dimen/text_size_10"
+            android:layout_gravity="center"
+            android:text="Platinum" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#d2d2d2" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/bt_bell_cirfum"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="@dimen/space_5"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn_login_s"
+        android:text="确定"
+        android:textAppearance="@style/TextAppearanceTitleLager"
+        android:textColor="@drawable/share_color_white_white_s" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/list_divider_color" />
+</LinearLayout>

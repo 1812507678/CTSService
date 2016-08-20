@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    >
+    <Button
+        android:id="@+id/bt_share"
+        style="@style/MenuItemTextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="取消分享"
+        android:onClick="cancle"/>
+
+    <GridView
+
+
+        android:id="@+id/gv_sharefamily"
+        android:numColumns="3"
+        android:verticalSpacing="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="250dp"
+        android:columnWidth="40dp"
+        android:layout_above="@id/bt_share"
+
+
+        android:gravity="center"
+        />
+
+
+    <!-- android:stretchMode="columnWidth"-->
+
+</RelativeLayout>
+

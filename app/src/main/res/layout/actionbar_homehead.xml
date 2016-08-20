@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/rl_home_top"
+    android:layout_width="fill_parent"
+    android:layout_height="45dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ctyon.com.ctsservice.view.CircleImageView
+        android:id="@+id/head_icon_iv"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/icon_inf_photo_boy"
+        />
+
+</RelativeLayout>

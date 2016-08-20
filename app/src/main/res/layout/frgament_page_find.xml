@@ -1,0 +1,97 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/ll_familygroup"
+            style="@style/option_item_rl"
+            android:layout_marginTop="@dimen/space_20">
+            <ImageView
+
+                style="@style/option_item_img"
+                android:background="@drawable/icon_care_familygroup"/>
+            <TextView
+                style="@style/option_item_text"
+                android:text="@string/familygroup" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_addfamily"
+            style="@style/option_item_rl"
+            android:layout_marginTop="@dimen/space_20" >
+
+            <ImageView
+                style="@style/option_item_img"
+                android:contentDescription="@null"
+                android:layout_marginRight="@dimen/space_10"
+                android:background="@drawable/icon_care_findfamily"/>
+
+            <TextView
+                style="@style/option_item_text"
+                android:text="添加亲友" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/list_divider_color" />
+
+        <LinearLayout
+            android:id="@+id/ll_activities"
+            style="@style/option_item_rl" >
+
+            <ImageView
+                style="@style/option_item_img"
+                android:contentDescription="@null"
+                android:background="@drawable/icon_care_activities"/>
+
+            <TextView
+                style="@style/option_item_text"
+                android:text="@string/activities" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/list_divider_color" />
+        <LinearLayout
+            android:id="@+id/ll_scan"
+            style="@style/option_item_rl"
+            android:layout_marginTop="@dimen/space_20" >
+
+            <ImageView
+                style="@style/option_item_img"
+                android:contentDescription="@null"
+                android:background="@drawable/icon_care_scan"/>
+
+            <TextView
+                style="@style/option_item_text"
+                android:text="@string/scan" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/list_divider_color" />
+        <LinearLayout
+            android:id="@+id/ll_find_care"
+            style="@style/option_item_rl" >
+
+            <ImageView
+                style="@style/option_item_img"
+                android:contentDescription="@null"
+                android:background="@drawable/icon_care_shake"/>
+
+            <TextView
+                style="@style/option_item_text"
+                android:text="关爱闹钟" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

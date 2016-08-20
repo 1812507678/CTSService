@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="设置头像"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_15"
+        android:layout_margin="@dimen/text_size_15"
+        android:textColor="@color/app"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/app" />
+
+    <Button
+        android:id="@+id/bt_item_camera"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="@dimen/space_20"
+
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn_login_s"
+        android:layout_marginTop="15.0dip"
+
+        android:text="拍摄新的照片"
+        android:textAppearance="@style/TextAppearanceTitleLager"
+        android:textColor="@drawable/share_color_white_white_s" />
+    <Button
+        android:id="@+id/bt_item_picture"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="@dimen/space_20"
+
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn_login_s"
+        android:layout_marginTop="15.0dip"
+
+        android:text="从相册中选取"
+        android:textAppearance="@style/TextAppearanceTitleLager"
+        android:textColor="@drawable/share_color_white_white_s" />
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/list_divider_color" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll_sethead_cancle"
+        android:gravity="center"
+        >
+        <TextView
+            android:id="@+id/tv_item_cancle"
+            style="@style/MenuItemTextViewStyle"
+            android:layout_height="@dimen/space_49"
+            android:text="取消"
+            android:gravity="center"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+
+</LinearLayout>

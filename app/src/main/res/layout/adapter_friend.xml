@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+    <TextView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:background="#EBEBEB"
+        android:textColor="#fff"
+        android:id="@+id/first_word"
+       android:paddingLeft="12dp"
+
+        android:text="A"/>
+<RelativeLayout
+    android:id="@+id/rl_add_nameandphone"
+    android:background="#ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#fff">
+
+    <TextView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        style="@style/MenuItemTextViewStyle"
+        android:id="@+id/name"
+
+        android:textColor="#333"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:text="名称"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/MenuItemTextViewStyle"
+        android:textSize="12sp"
+        android:id="@+id/phone"
+        android:paddingLeft="10dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="5dp"
+
+        android:textColor="#000000"
+        android:text="号码"
+        />
+</LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+ 授权"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:paddingRight="50dp"
+        android:textColor="#333"
+        style="@style/MenuItemTextViewStyle"
+        android:textSize="11sp"
+
+        />
+    <!--<ImageView
+
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="50dp"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:id="@+id/iv_adpter_friend"
+        android:background="@drawable/btn_radio_off"
+        />-->
+
+
+</RelativeLayout>
+
+    
+
+
+</LinearLayout>

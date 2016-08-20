@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:osc="http://schemas.android.com/apk/res-auto" >
+
+    <item
+        android:id="@+id/public_menu_information"
+        android:title="使用说明"
+        android:visible="true"
+        osc:showAsAction="always"/>
+
+</menu>

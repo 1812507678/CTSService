@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/date_picker_view_animator">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_10"
+        android:layout_marginLeft="@dimen/space_10"
+        android:textSize="@dimen/text_size_30"
+        android:textColor="@color/red"
+        android:text="【功能提示】"/>
+    <TextView
+        android:layout_margin="@dimen/space_10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_30"
+        android:textColor="@color/green"
+        android:text="设置了该页面的参数,家人定位宝会智能判断家人否在家庭附近，是否需要停止上报位置信息。"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_10"
+        android:layout_marginLeft="@dimen/space_10"
+        android:textSize="@dimen/text_size_30"
+        android:textColor="@color/red"
+        android:text="【操作提示】"/>
+    <TextView
+        android:layout_margin="@dimen/space_10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_30"
+        android:textColor="@color/green"
+        android:text="进入地址选择后，通过搜索地址或者移动橙色标签，将其指向您的家庭位置，点击右上角保存按钮即可保存成功"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_10"
+        android:layout_marginLeft="@dimen/space_10"
+        android:textSize="@dimen/text_size_30"
+        android:textColor="@color/black"
+        android:text="监护时间设定"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+              android:layout_margin="@dimen/space_10"
+                android:textSize="@dimen/text_size_30"
+                android:textColor="@color/black"
+                android:text="开始时间"/>
+            <EditText
+                android:id="@+id/et_guardianship_start"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_30"
+                android:textColor="@color/black"
+
+                android:text="08:05:00"
+                />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/list_divider_color" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/space_10"
+                android:textSize="@dimen/text_size_30"
+                android:textColor="@color/black"
+                android:text="结束时间"/>
+            <EditText
+                android:id="@+id/et_guardianship_end"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_30"
+                android:textColor="@color/black"
+
+                android:text="20:05:00"
+                />
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_10"
+        android:layout_marginLeft="@dimen/space_10"
+        android:textSize="@dimen/text_size_30"
+        android:textColor="@color/black"
+        android:text="家庭位置设定"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/space_10"
+            android:textSize="@dimen/text_size_30"
+            android:textColor="@color/black"
+            android:text="地址选择   未设置"
+            />
+
+        <ImageView
+            android:id="@+id/iv_avatar"
+            android:layout_marginTop="@dimen/space_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/r_arrow"
+            android:layout_alignParentRight="true"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+
+            android:layout_marginTop="@dimen/space_8"
+            android:src="@drawable/map_tag"
+            android:layout_toLeftOf="@id/iv_avatar"
+            />
+    </RelativeLayout>
+
+</LinearLayout>
+</ScrollView>

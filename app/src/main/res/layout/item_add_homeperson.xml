@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="使用说明"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_15"
+        android:layout_margin="@dimen/text_size_20"
+        android:textColor="@color/app"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/app" />
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="点击授权，授权给亲友"
+       android:gravity="center"
+
+       android:layout_margin="10dp"
+       />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/app" />
+    <Button
+        android:id="@+id/bt_sure_add"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="@dimen/space_20"
+
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn_login_s"
+        android:layout_marginTop="15.0dip"
+
+        android:text="确定"
+        android:textAppearance="@style/TextAppearanceTitleLager"
+        android:textColor="@drawable/share_color_white_white_s" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/list_divider_color" />
+
+</LinearLayout>
